@@ -37,15 +37,17 @@ document.write('<style type="text/css"</style>');}
 <script type:"text/javascript" src="data.json"></script>
 -->
 <script>
-    var click1 = 1;
-    function sidebar2click(){
-        if(click1==1){
+    var sidebar2click = 1;
+    function sidebar2open(){
+        if(sidebar2click==1){
             document.getElementById("sidebar2").style.display = "block";
-            click=2;
+            sidebar2click=2;
         }
-        else{
-            document.getElementById("sidebar2").style.display = "none";
-            click=1;
+    }
+    function sidebar2close(){
+        if(sidebar2click!=1){
+            document.getElementById("sidebar2").style.display = "nose";
+            sidebar2click=1;
         }
     }
 </script>
@@ -55,10 +57,10 @@ document.write('<style type="text/css"</style>');}
 
     <div id="sidebar2">
         <p>Texto copado</p>
-        <button class="btn01">Boton copado</button>
+        <button class="btn01" onclick="sidebar2close()">Boton copado</button>
     </div>
 
-        <button class="btn01" onclick="sidebar2click()">Click aqui</button>
+        <button class="btn01" onclick="sidebar2open()">Click aqui</button>
         <button class="btn01">O aqui</button>
     </div>    
     <div style="margin-left: 25%">

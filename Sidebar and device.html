@@ -60,7 +60,7 @@ from{left:-10%;opacity:0} to{left:0%;opacity:1}
         switch(sidebarBclick){
             case 1:
                 if(sidebarBclose!=1){
-                    document.getElementById("sidebar1").style.width = "20%";
+                    document.getElementById("sidebar1").style.animationName = "animateleft";
                     document.getElementById("sidebar1").style.display = "block";
                     sidebarBclose=1;
                 }else{

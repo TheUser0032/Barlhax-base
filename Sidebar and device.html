@@ -17,19 +17,6 @@ document.write('<style type="text/css"</style>');}
     overflow: auto;
     background-color: #fff;
 }
-#sidebar1{
-    heigth: 100%;
-    width: 0%;
-    padding-left: 21%;
-    position: fixed;
-    z-index: -1;
-    background-color: #afa;
-    transition: width 1s;
-}
-.sidebarBItems{
-    heigth: 0%;
-    transition: heigth .3s;
-}
 .sidebarB{
     heigth: 100%;
     width: 20%;
@@ -53,15 +40,12 @@ document.write('<style type="text/css"</style>');}
 <script>
     var sidevarBclose=0;
     function sidebarBopen(sidebarBclick){
-        document.getElementByClassName("sidebarBItems").style.heigth = "0%";
-        document.getElementById("sidebar1").style.width = "0%";
+        document.getElementById("sidebar1").style.display = "none";
         document.getElementById("sidebar2").style.display = "none";
         switch(sidebarBclick){
             case 1:
                 if(sidevarBclose!=1){
-                    document.getElementById("sidebar1").style.paddingLeft = "25%";
-                    document.getElementById("sidebar1").style.width = "20%";
-                    document.getElementByClassName("sidebarBItems").style.heigth = "100%";
+                    document.getElementById("sidebar1").style.display = "block";
                     sidevarBclose=1;
                 }else{sidevarBclose=0;}
                 break;
@@ -80,8 +64,8 @@ document.write('<style type="text/css"</style>');}
     <div class="sidebarA">
 
     <div id="sidebar1">
-        <p class="sidebarBItems">Texto copado</p>
-        <button class="btn01 sidebarBItems">Boton copado</button>
+        <p>Texto copado</p>
+        <button class="btn01">Boton copado</button>
     </div>
     <div id="sidebar2" class="sidebarB">
         <p>Texto chido</p>

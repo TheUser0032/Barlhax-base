@@ -18,11 +18,11 @@ document.write('<style type="text/css"</style>');}
     background-color: #fff;
 }
 #sidebar1{
-    heigth: 0%;
+    heigth: 100%;
     width: 0%;
     padding-left: 25%;
     position: fixed;
-    display: block;
+    display: none;
     z-index: -1;
     background-color: #afa;
     transition: width 1s;
@@ -35,6 +35,7 @@ document.write('<style type="text/css"</style>');}
     display: none;
     z-index: -1;
     background-color: #afa;
+    transition: width 1s;
 }
 .btn01{
     border: none;
@@ -50,12 +51,12 @@ document.write('<style type="text/css"</style>');}
     var sidevarBclose=0;
     function sidebarBopen(sidebarBclick){
         document.getElementById("sidebar1").style.width = "0%";
-        document.getElementById("sidebar1").style.heigth = "0%";
+        document.getElementById("sidebar1").style.display = "none";
         document.getElementById("sidebar2").style.display = "none";
         switch(sidebarBclick){
             case 1:
                 if(sidevarBclose!=1){
-                    document.getElementById("sidebar1").style.heigth = "100%";
+                    document.getElementById("sidebar1").style.display = "block";
                     document.getElementById("sidebar1").style.width = "20%";
                     sidevarBclose=1;
                 }else{sidevarBclose=0;}

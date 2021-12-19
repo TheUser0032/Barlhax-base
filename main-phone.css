@@ -25,7 +25,7 @@
     animation-name: animatedown;
 }
     @keyframes animatedown{
-from{top:-2%;opacity:0} to{top:0%;opacity:1}
+from{top:-2%;opacity:0} to{top:8%;opacity:1}
 }
 .btn01{
     heigth:100%;

@@ -9,7 +9,7 @@ document.write('<style type="text/css"</style>');}
 </script>
 -->
 <style>
-.sidebar1{
+.sidebarA{
     heigth: 100%;
     width: 20%;
     position: fixed;
@@ -37,45 +37,35 @@ document.write('<style type="text/css"</style>');}
 <script type:"text/javascript" src="data.json"></script>
 -->
 <script>
-    var sidebar2click=1;
-    var sidebar3click=1;
-    function sidebar2open(){
-        if(sidebar2click==1){
-            document.getElementById("sidebar2").getElementByClassName("sidebarB").style.display = "block";
-            sidebar2click=2;
-        }else{
-        document.getElementByClassName("sidebarB").style.display = "none";
-        sidebar2click=1;
+    function sidebarBopen(var sidebarBclick){
+        document.getElementById("sidebar1").style.display = "none";
+        document.getElementById("sidebar2").style.display = "none";
+        switch(sidebarBclick){
+            case 1:
+                document.getElementById("sidebar1").style.display = "block";
+                break;
+            case 2:
+                document.getElementById("sidebar2").style.display = "block";
+                break;
+            default:break;
         }
-    }function sidebar3open(){
-        if(sidebar3click==1){
-            document.getElementById("sidebar3").style.display = "block";
-            sidebar3click=2;
-        }else{
-            sidebarBclose();
-        }
-    }
-    function sidebarBclose(){
-        document.getElementByClassName("sidebarB").style.display = "none";
-        sidebar2click=1;
-        sidebar3click=1;
     }
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-    <div class="sidebar1">
+    <div class="sidebarA">
 
-    <div id="sidebar2" class="sidebarB">
+    <div id="sidebar1" class="sidebarB">
         <p>Texto copado</p>
         <button class="btn01">Boton copado</button>
     </div>
-    <div id="sidebar3" class="sidebarB">
+    <div id="sidebar2" class="sidebarB">
         <p>Texto chido</p>
         <button class="btn01">Boton chido</button>
     </div>
 
-        <button class="btn01" onclick="sidebar2open()">Click aqui</button>
-        <button class="btn01" onclick="sidebar3open()">O aqui</button>
+        <button class="btn01" onclick="sidebarBopen(1)">Click aqui</button>
+        <button class="btn01" onclick="sidebarBopen(2)">O aqui</button>
     </div>    
     <div style="margin-left: 25%">
         <p>Texto fachero</p>

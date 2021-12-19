@@ -30,8 +30,11 @@ document.write('<style type="text/css"</style>');}
 .sidebarB2{
     width: 20%;
 }
-.sidebarB2 .elementsB2{
+.elementsB{
 visibility: hidden;
+}
+.elementsB.elementsB2{
+visibility: visible;
 }
 .btn01{
     border: none;
@@ -51,7 +54,7 @@ visibility: hidden;
             case 1:
                 if(sidevarBclose!=1){
                     document.getElementById("sidebar1").classList.toggle("sidebarB2");
-                    document.getElementByClassName("sidebarB2").classList.toggle("elementsB2");
+                    document.getElementByClassName("elementsB").classList.toggle("elementsB2");
                     sidevarBclose=1;
                 }else{sidevarBclose=0;}
                 break;
@@ -70,7 +73,7 @@ visibility: hidden;
     <div class="sidebarA">
 
     <div id="sidebar1" class="sidebarB">
-        <p class="elementsB2">Texto copado</p>
+        <p class="elementsB">Texto copado</p>
     </div>
     <div id="sidebar2" class="sidebarB">
         <p>Texto chido</p>

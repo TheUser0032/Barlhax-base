@@ -39,11 +39,6 @@ document.write('<style type="text/css"</style>');}
 <script>
     var sidebar2click=1;
     var sidebar3click=1;
-    function sidebarBclose(){
-        document.getElementByClassName("sidebarB").style.display = "none";
-        sidebar2click=1;
-        sidebar3click=1;
-    }
     function sidebar2open(){
         if(sidebar2click==1){
             document.getElementById("sidebar2").style.display = "block";
@@ -58,6 +53,11 @@ document.write('<style type="text/css"</style>');}
         }else{
             sidebarBclose();
         }
+    }
+    function sidebarBclose(){
+        document.getElementByClassName("sidebarB").style.display = "none";
+        sidebar2click=1;
+        sidebar3click=1;
     }
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

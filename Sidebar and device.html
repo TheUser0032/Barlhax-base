@@ -48,23 +48,23 @@ from{left:-10%;opacity:0} to{left:0%;opacity:1}
 <script type:"text/javascript" src="data.json"></script>
 -->
 <script>
-    var sidevarBclose=0;
+    var sidebarBclose=0;
     function sidebarBopen(sidebarBclick){
         document.getElementById("sidebar1").style.display = "none";
         document.getElementById("sidebar2").style.display = "none";
         switch(sidebarBclick){
             case 1:
-                if(sidevarBclose!=1){
+                if(sidebarBclose!=1){
                     document.getElementById("sidebar1").style.width = "20%";
                     document.getElementById("sidebar1").style.display = "block";
                     sidebarBclose=1;
-                }else{sidevarBclose=0;}
+                }else{sidebarBclose=0;}
                 break;
             case 2:
-                if(sidevarBclose!=2){
+                if(sidebarBclose!=2){
                     document.getElementById("sidebar2").style.display = "block";
-                    sidevarBclose=2;
-                }else{sidevarBclose=0;}
+                    sidebarBclose=2;
+                }else{sidebarBclose=0;}
                 break;
             default:break;
         }
@@ -76,7 +76,7 @@ from{left:-10%;opacity:0} to{left:0%;opacity:1}
         <button class="btn01" onclick="sidebarBopen(1)">Click aqui</button>
         <button class="btn01" onclick="sidebarBopen(2)">O aqui</button>
     </div>
-    <div id="sidebar1" class="sidebarB" style="display:none">
+    <div id="sidebar1" class="sidebarB sidebarB-left" style="display:none">
         <p>Texto copado</p>
     </div>
     <div id="sidebar2" class="sidebarB" style="display:none">

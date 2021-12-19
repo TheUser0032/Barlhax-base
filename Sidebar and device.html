@@ -37,15 +37,22 @@ document.write('<style type="text/css"</style>');}
 <script type:"text/javascript" src="data.json"></script>
 -->
 <script>
+    var sidevarBclose=0;
     function sidebarBopen(sidebarBclick){
         document.getElementById("sidebar1").style.display = "none";
         document.getElementById("sidebar2").style.display = "none";
         switch(sidebarBclick){
             case 1:
-                document.getElementById("sidebar1").style.display = "block";
+                if(sidevarBclose!=1){
+                    document.getElementById("sidebar1").style.display = "block";
+                    sidevarBclose=1;
+                }else{sidevarBclose=0;}
                 break;
             case 2:
-                document.getElementById("sidebar2").style.display = "block";
+                if(sidevarBclose!=2){
+                    document.getElementById("sidebar2").style.display = "block";
+                    sidevarBclose=2;
+                }else{sidevarBclose=0;}
                 break;
             default:break;
         }

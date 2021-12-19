@@ -25,7 +25,6 @@ document.write('<style type="text/css"</style>');}
     display: none;
     z-index: -1;
     background-color: #afa;
-    transition: height .4s;
 }
 .btn01{
     border: none;
@@ -34,14 +33,17 @@ document.write('<style type="text/css"</style>');}
     padding-top: 5px;
 }
 </style>
+    <!--
 <script type:"text/javascript" src="data.json"></script>
+-->
 <script>
     var click1 = 1;
     function sidebar2click(){
         if(click1==1){
             document.getElementById("sidebar2").style.display = "block";
             click=2;
-        }else{
+        }
+        else{
             document.getElementById("sidebar2").style.display = "none";
             click=1;
         }

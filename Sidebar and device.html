@@ -57,6 +57,7 @@ document.write('<style type="text/css"</style>');}
             case 1:
                 if(sidevarBclose!=1){
                     document.getElementById("sidebar1").style.display = "block";
+                    document.getElementById("sidebar1").style.transition = "width 1s";
                     document.getElementById("sidebar1").style.width = "20%";
                     sidevarBclose=1;
                 }else{sidevarBclose=0;}

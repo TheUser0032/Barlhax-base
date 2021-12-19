@@ -57,7 +57,10 @@ from{left:-10%;opacity:0} to{left:0%;opacity:1}
                     document.getElementById("sidebar1").style.width = "20%";
                     document.getElementById("sidebar1").style.display = "block";
                     sidebarBclose=1;
-                }else{sidevarBclose=0;}
+                }else{
+                    document.getElementById("sidebar1").style.display = "none";
+                    sidevarBclose=0;
+                }
                 break;
             case 2:
                 if(sidevarBclose!=2){

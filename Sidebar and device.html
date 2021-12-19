@@ -41,7 +41,7 @@ document.write('<style type="text/css"</style>');}
     function sidebar2open(){
         if(sidebar2click==1){
             document.getElementById("sidebar2").style.display = "block";
-            sidebar2click++;
+            sidebar2click=2;
         }else{
             document.getElementById("sidebar2").style.display = "none";
             sidebar2click=1;
@@ -54,7 +54,7 @@ document.write('<style type="text/css"</style>');}
 
     <div id="sidebar2">
         <p>Texto copado</p>
-        <button class="btn01" onclick="sidebar2close()">Boton copado</button>
+        <button class="btn01">Boton copado</button>
     </div>
 
         <button class="btn01" onclick="sidebar2open()">Click aqui</button>

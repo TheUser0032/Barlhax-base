@@ -24,7 +24,6 @@ document.write('<style type="text/css"</style>');}
     position: fixed;
     z-index: -1;
     background-color: #afa;
-    transition: width 1s;
 }
 .sidebarB2{
     width: 20%;
@@ -33,11 +32,7 @@ document.write('<style type="text/css"</style>');}
 position: relative;
 animation: animateleft 0.5s;
 }@keyframes animateleft{
-from{left:1%;opacity:0} to{left:20%;opacity:1}
-}
-.elementsB{
-z-index: -2;
-visibility: hidden;
+from{left:20%;opacity:0} to{left:40%;opacity:1}
 }
 .btn01{
     width: 100%;
@@ -56,7 +51,7 @@ visibility: hidden;
         switch(sidebarBclick){
             case 1:
                 if(sidevarBclose!=1){
-                    document.getElementById("sidebar1").style.width = "40%";
+                    document.getElementById("sidebar1").style.width = "20%";
                     document.getElementById("sidebar1").style.display = "block";
                 }else{sidevarBclose=0;}
                 break;

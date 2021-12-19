@@ -44,6 +44,8 @@ document.write('<style type="text/css"</style>');}
             document.getElementById("sidebar2").style.display = "block";
             sidebar2click=2;
         }else{
+        document.getElementByClassName("sidebarB").style.display = "none";
+        sidebar2click=1;
             sidebarBclose();
         }
     }function sidebar3open(){

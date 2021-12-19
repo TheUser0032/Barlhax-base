@@ -30,6 +30,8 @@ document.write('<style type="text/css"</style>');}
     overflow: auto;
     z-index: -1;
     background-color: #afa;
+    animation-duration: 0.3s;
+    animation-name: animateleft;
 }
 .sidebarB-left{
     z-index -1;
@@ -63,7 +65,7 @@ from{left:-10%;opacity:0} to{left:0%;opacity:1}
                     sidebarBclose=1;
                 }else{
                     sidebarBclose=0;
-                    document.getElementById("sidebar1").style.animation = "animateright 0.5s";
+                    document.getElementById("sidebar1").style.animationName = "animateright";
                     document.getElementById("sidebar1").style.display = "none";
                     }
                 break;
@@ -83,7 +85,7 @@ from{left:-10%;opacity:0} to{left:0%;opacity:1}
         <button class="btn01" onclick="sidebarBopen(1)">Click aqui</button>
         <button class="btn01" onclick="sidebarBopen(2)">O aqui</button>
     </div>
-    <div id="sidebar1" class="sidebarB sidebarB-left" style="display:none">
+    <div id="sidebar1" class="sidebarB" style="display:none">
         <p>Texto copado</p>
     </div>
     <div id="sidebar2" class="sidebarB" style="display:none">

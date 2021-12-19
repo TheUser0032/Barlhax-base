@@ -10,13 +10,13 @@ document.write('<style type="text/css"</style>');}
 -->
 <style>
     #main{
-        margin-left: 25%;
+        margin-left: 10%;
         position: absolute;
         z-index: -6;
     }
 .sidebarA{
     heigth: 100%;
-    width: 20%;
+    width: 8%;
     position: fixed;
     z-index: 1;
     overflow: auto;
@@ -24,8 +24,8 @@ document.write('<style type="text/css"</style>');}
 }
 .sidebarB{
     heigth: 100%;
-    width: 20%;
-    padding-left: 25%;
+    width: 8%;
+    padding-left: 10%;
     position: fixed;
     overflow: auto;
     z-index: -1;
@@ -39,10 +39,10 @@ position: relative;
 animation: animateleft 0.5s;
 }
     @keyframes animateleft{
-from{left:-10%;opacity:0} to{left:0%;opacity:1}
+from{left:-8%;opacity:0} to{left:0%;opacity:1}
 }
     @keyframes animateright{
-        from{left:0%;opacity:1} to{left:-10%;opacity:0}
+        from{left:0%;opacity:1} to{left:-8%;opacity:0}
     }
 .btn01{
     width: 100%;
@@ -64,9 +64,9 @@ from{left:-10%;opacity:0} to{left:0%;opacity:1}
                     document.getElementById("sidebar1").style.display = "block";
                     sidebarBclose=1;
                 }else{
-                    sidebarBclose=0;
                     document.getElementById("sidebar1").style.animationName = "animateright";
                     document.getElementById("sidebar1").style.display = "none";
+                    sidebarBclose=0;
                     }
                 break;
             case 2:

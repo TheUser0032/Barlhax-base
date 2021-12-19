@@ -1,5 +1,5 @@
 #main{
-        margin-top: 10%;
+        margin-top: 8%;
         position: absolute;
         z-index: -2;
     }
@@ -15,12 +15,12 @@
 .sidebarB{
     heigth: 8%;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 8%;
     position: fixed;
     overflow: auto;
     z-index: -1;
     background-color: #aaa;
-    animation-duration: 0.4s;
+    animation-duration: 0.3s;
     animation-name: animatedown;
 }
     @keyframes animatedown{

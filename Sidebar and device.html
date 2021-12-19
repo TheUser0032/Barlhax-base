@@ -1,17 +1,7 @@
 <html>
     <!--Detecta navegador, caso contrario es android-->
-<script type="text/javascript">
-//<![CDATA[
-if(navigator.userAgent.match(/Android/i)
-|| navigator.userAgent.match(/webOS/i)
-|| navigator.userAgent.match(/iPhone/i)
-|| navigator.userAgent.match(/iPad/i)
-|| navigator.userAgent.match(/iPod/i)
-|| navigator.userAgent.match(/BlackBerry/i)
-|| navigator.userAgent.match(/Windows Phone/i)) {document.write('<script type="text/css" src="main-phone.css"></script>')} else {
-document.write('<script type="text/css" src="main.css"></script>');}
-//]]>
-</script>
+    <link rel="stylesheet" media="only screen and (max-width: 800px)" href="main-phone.css" >
+    <link rel="stylesheet" media="only screen and (min-width: 800px)" href="main.css" >
     <!--
 <script type:"text/javascript" src="data.json"></script>
 -->

@@ -2,7 +2,13 @@
     <!--Detecta navegador, caso contrario es android-->
 <script type="text/javascript">
 //<![CDATA[
-if((navigator.userAgent.match(/MSIE/i)) || (navigator.userAgent.match(/Googlebot/i)) || (navigator.userAgent.match(/Chrome/i)) || (navigator.userAgent.match(/Firefox/i))) {document.write('<style type="text/css" src="main-phone.css"></style>')} else {
+if(navigator.userAgent.match(/Android/i)
+|| navigator.userAgent.match(/webOS/i)
+|| navigator.userAgent.match(/iPhone/i)
+|| navigator.userAgent.match(/iPad/i)
+|| navigator.userAgent.match(/iPod/i)
+|| navigator.userAgent.match(/BlackBerry/i)
+|| navigator.userAgent.match(/Windows Phone/i)) {document.write('<style type="text/css" src="main-phone.css"></style>')} else {
 document.write('<style type="text/css" src="main.css"></style>');}
 //]]>
 </script>

@@ -19,7 +19,7 @@
     position: fixed;
     overflow: auto;
     z-index: -1;
-    background-color: #aaa;
+    background-color: #fff;
     animation-duration: 0.3s;
     animation-name: animatedown;
 }

@@ -37,18 +37,11 @@ document.write('<style type="text/css"</style>');}
 <script type:"text/javascript" src="data.json"></script>
 -->
 <script>
-    var sidebar2click = 1;
     function sidebar2open(){
-        if(sidebar2click==1){
-            document.getElementById("sidebar2").style.display = "block";
-            sidebar2click=2;
-        }
+        document.getElementById("sidebar2").style.display = "block";
     }
     function sidebar2close(){
-        if(sidebar2click!=1){
-            document.getElementById("sidebar2").style.display = "nose";
-            sidebar2click=1;
-        }
+        document.getElementById("sidebar2").style.display = "nose";
     }
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

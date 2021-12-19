@@ -17,7 +17,7 @@ document.write('<style type="text/css"</style>');}
     overflow: auto;
     background-color: #fff;
 }
-#sidebar2{
+.sidebarB{
     heigth: 100%;
     width: 20%;
     padding-left: 25%;
@@ -38,13 +38,25 @@ document.write('<style type="text/css"</style>');}
 -->
 <script>
     var sidebar2click=1;
+    var sidebar3click=1;
+    function sidebarBclose(){
+        document.getElementByClassName("sidebarB").style.display = "none";
+        sidebar2click=1;
+        sidebar3click=1;
+    }
     function sidebar2open(){
         if(sidebar2click==1){
             document.getElementById("sidebar2").style.display = "block";
             sidebar2click=2;
         }else{
-            document.getElementById("sidebar2").style.display = "none";
-            sidebar2click=1;
+            sidebarBclose();
+        }
+    }function sidebar2open(){
+        if(sidebar3click==1){
+            document.getElementById("sidebar3").style.display = "block";
+            sidebar3click=2;
+        }else{
+            sidebarBclose();
         }
     }
 </script>
@@ -52,9 +64,13 @@ document.write('<style type="text/css"</style>');}
 <body>
     <div class="sidebar1">
 
-    <div id="sidebar2">
+    <div id="sidebar2" class="sidebarB">
         <p>Texto copado</p>
         <button class="btn01">Boton copado</button>
+    </div>
+    <div id="sidebar3" class="sidebarB">
+        <p>Texto chido</p>
+        <button class="btn01">Boton chido</button>
     </div>
 
         <button class="btn01" onclick="sidebar2open()">Click aqui</button>

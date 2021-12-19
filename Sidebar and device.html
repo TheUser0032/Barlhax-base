@@ -30,7 +30,7 @@ document.write('<style type="text/css"</style>');}
 .sidebarB2{
     width: 20%;
 }
-.elementsB{
+.elementsB.a{
 visibility: hidden;
 }
 .btn01{
@@ -50,7 +50,7 @@ visibility: hidden;
             case 1:
                 if(sidevarBclose!=1){
                     document.getElementById("sidebar1").classList.toggle("sidebarB2");
-                    document.getElementByClassName("elementsB").style.visibility = "visible";
+                    document.getElementByClassName("elementsB").classList("a");
                 }else{sidevarBclose=0;}
                 break;
             case 2:

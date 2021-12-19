@@ -1,51 +1,11 @@
 <html>
     <!--Detecta navegador, caso contrario es android-->
-    <!--
 <script type="text/javascript">
 //<![CDATA[
-if((navigator.userAgent.match(/MSIE/i)) || (navigator.userAgent.match(/Googlebot/i)) || (navigator.userAgent.match(/Chrome/i)) || (navigator.userAgent.match(/Firefox/i))) {""} else {
-document.write('<style type="text/css"</style>');}
+if((navigator.userAgent.match(/MSIE/i)) || (navigator.userAgent.match(/Googlebot/i)) || (navigator.userAgent.match(/Chrome/i)) || (navigator.userAgent.match(/Firefox/i))) {document.write('<style type="text/css" src="main.css"></style>')} else {
+document.write('<style type="text/css" src="main-phone.css"></style>');}
 //]]>
 </script>
--->
-<style>
-    #main{
-        margin-left: 10%;
-        position: absolute;
-        z-index: -2;
-    }
-.sidebarA{
-    padding-left:0%;
-    heigth: 100%;
-    width: 8%;
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
-    background-color: #fff;
-}
-.sidebarB{
-    heigth: 100%;
-    width: 8%;
-    padding-left: 10%;
-    position: fixed;
-    overflow: auto;
-    z-index: -1;
-    background-color: #afa;
-    animation-duration: 0.1s;
-    animation-name: animateleft;
-    animation-direction:alternate;
-}
-    @keyframes animateleft{
-from{left:-2%;opacity:0} to{left:0%;opacity:1}
-}
-.btn01{
-    border: none;
-    width: 100%;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-</style>
     <!--
 <script type:"text/javascript" src="data.json"></script>
 -->

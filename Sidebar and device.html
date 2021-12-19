@@ -38,6 +38,9 @@ animation: animateleft 0.5s;
 }@keyframes animateleft{
 from{left:-10%;opacity:0} to{left:0%;opacity:1}
 }
+    @keyframes animateright{
+        from{left:0%;opacity:1} to{left:-10%;opacity:0}
+    }
 .btn01{
     width: 100%;
     text-align: center;
@@ -50,7 +53,6 @@ from{left:-10%;opacity:0} to{left:0%;opacity:1}
 <script>
     var sidebarBclose=0;
     function sidebarBopen(sidebarBclick){
-        document.getElementById("sidebar1").style.display = "none";
         document.getElementById("sidebar2").style.display = "none";
         switch(sidebarBclick){
             case 1:
@@ -58,7 +60,11 @@ from{left:-10%;opacity:0} to{left:0%;opacity:1}
                     document.getElementById("sidebar1").style.width = "20%";
                     document.getElementById("sidebar1").style.display = "block";
                     sidebarBclose=1;
-                }else{sidebarBclose=0;}
+                }else{
+                    sidebarBclose=0;
+                    document.getElementById("sidebar1").style.animate = "animateright 0.5s";
+                    document.getElementById("sidebar1").style.display = "none";
+                    }
                 break;
             case 2:
                 if(sidebarBclose!=2){

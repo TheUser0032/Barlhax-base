@@ -31,7 +31,7 @@ document.write('<style type="text/css"</style>');}
     width: 20%;
 }
 .elementsB{
-display: none;
+visibility: hidden;
 }
 .btn01{
     width: 100%;
@@ -46,12 +46,12 @@ display: none;
     var sidevarBclose=0;
     function sidebarBopen(sidebarBclick){
         document.getElementById("sidebar2").style.display = "none";
-        document.getElementByClassName("elementsB").style.display = "none";
+        document.getElementByClassName("elementsB").style.visibility = "hidden";
         switch(sidebarBclick){
             case 1:
                 if(sidevarBclose!=1){
                     document.getElementById("sidebar1").classList.toggle("sidebarB2");
-                    document.getElementByClassName("elementsB").style.display = "block";
+                    document.getElementByClassName("elementsB").style.visibility = "visible";
                 }else{sidevarBclose=0;}
                 break;
             case 2:

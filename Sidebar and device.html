@@ -32,6 +32,7 @@ document.write('<style type="text/css"</style>');}
     background-color: #afa;
 }
 .sidebarB-left{
+    z-index -1;
 position: relative;
 animation: animateleft 0.5s;
 }@keyframes animateleft{
@@ -50,7 +51,6 @@ from{left:-10%;opacity:0} to{left:0%;opacity:1}
     var sidevarBclose=0;
     function sidebarBopen(sidebarBclick){
         document.getElementById("sidebar1").style.display = "none";
-                    document.getElementById("sidebar1").style.width = "0%";
         document.getElementById("sidebar2").style.display = "none";
         switch(sidebarBclick){
             case 1:

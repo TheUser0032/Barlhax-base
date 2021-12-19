@@ -17,14 +17,15 @@ document.write('<style type="text/css"</style>');}
     overflow: auto;
     background-color: #fff;
 }
-.sidebar2{
-    height: 100%;
+#sidebar2{
+    heigth: 0%;
     weight: 20%;
     padding-left: 25%;
     position: fixed;
     display: block;
     z-index: -1;
     background-color: #afa;
+    transition: height .4s;
 }
 .btn01{
     border: none;
@@ -34,11 +35,23 @@ document.write('<style type="text/css"</style>');}
 }
 </style>
 <script type:"text/javascript" src="data.json"></script>
+<script type:"text/javascript">
+    var click1 = 1;
+    function sidebar2click(){
+        if(click1==1){
+            document.getElementById("sidebar2").style.height = "100%";
+            click++;
+        }else{
+            document.getElementById("sidebar2").style.height = "0%";
+            click=1;
+        }
+    }
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
     <div class="sidebar1">
 
-    <div class="sidebar2">
+    <div id="sidebar2">
         <p>Texto copado</p>
         <button class="btn01">Boton copado</button>
     </div>
